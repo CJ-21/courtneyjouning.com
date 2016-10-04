@@ -1,0 +1,92 @@
+@import 'vars'
+
+.portfolio-box
+	height 180px
+	width 100%
+	flex-direction row
+	flex-wrap wrap
+	position relative
+	
+.portfolio-box img
+	height 100%
+	width 100%
+	object-fit cover
+	
+.portfolio-box-caption
+	background-color primary-color
+	color white
+	opacity 0
+	position absolute
+	bottom 0
+	text-align center
+	width 100%
+	height 100%
+	display flex
+	justify-content center
+	align-items center
+
+.portfolio-box-caption:active
+	opacity 1
+	transition 0.5s
+
+.project-category,.project-name
+	padding 10px 0
+	
+.project-category
+	color rgba(255, 255, 255, 0.7)
+	font-weight 600
+	font-size 1em
+	
+.project-name
+	font-size 1.2em
+
+@media (min-width: breakpoint-tablet)
+	
+	.portfolio-box
+		height 210px
+		width 50%
+		
+	.portfolio-box img
+		height 210px
+		width 100%
+		object-fit cover
+		
+	.portfolio-box-caption:active
+		opacity 1
+		transition 0.5s
+
+@media (min-width: breakpoint-desktop)
+
+	.portfolio-box
+		height 230px
+		width 33.33%
+		
+	.portfolio-box img
+		height 230px
+		width 100%
+		object-fit cover
+	
+	.portfolio-box-caption:hover
+		opacity 1
+		transition 0.5s
+
+@media (min-width: breakpoint-xl)
+
+	.portfolio-box
+		height 375px
+		width 25%
+		
+	.portfolio-box img
+		height 375px
+		width 100%
+		object-fit cover
+		
+	.portfolio-box-caption:hover
+		opacity 1
+		transition 0.5s
+		
+	.project-category
+		font-size 1.2em
+	
+	.project-name
+		font-size 1.6em
