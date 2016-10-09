@@ -1,0 +1,56 @@
+@import 'vars'
+
+.about-content
+	padding 1em
+	text-align justify
+	font-size 0.8em
+	
+.head-shot img
+	width 200px
+	height 250px
+
+#about .container
+	display flex
+	flex-direction column
+	align-items center
+
+
+@media (min-width: breakpoint-tablet)
+
+	.about-content
+		font-size 0.8em
+		
+	
+	.about
+		display flex
+		flex-direction row
+
+@media (min-width: breakpoint-desktop)
+
+	.about-content
+		font-size 0.8em
+		padding 0 0 0 5em
+			
+	.about
+		flex 1
+	
+	.about-content p
+		margin 2.5em 0
+			
+	#about .container
+		diplay flex
+		flex-direction row
+		padding 0 2em
+
+	.head-shot img
+		width 250px
+		height 300px
+			
+@media (min-width: breakpoint-xl)
+	
+	.about-content
+		font-size 1em
+		
+	.head-shot img
+		width 300px
+		height 350px

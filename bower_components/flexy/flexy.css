@@ -142,7 +142,7 @@
     flex: 6;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 48em) {
     [layout~="sm-row"],      [data-layout~="sm-row"] {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -280,7 +280,7 @@
     }
 }
 
-@media screen and (max-width: 64em) and (min-width: 40em) {
+@media screen and (max-width: 64em) and (min-width: 48em) {
     [layout~="md-row"],      [data-layout~="md-row"] {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;

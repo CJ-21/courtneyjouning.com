@@ -1,4 +1,8 @@
 @import 'portfolio'
+@import 'about'
+@import 'footer'
+@import 'header'
+@import 'nav'
 @import 'vars'
 
 * 
@@ -12,6 +16,27 @@ body
 
 .container
 	margin 0 auto
-	max-width 63em
+	max-width 65em
 	
+h1
+	text-align center
+	padding 1em 0
+	font-size 1.5em
+	color header-font-color
+	margin 0
 	
+@media (min-width: breakpoint-tablet)
+
+	h1
+		padding 2em 0
+		font-size 2em
+
+@media (min-width: breakpoint-desktop)
+	
+	h1
+		padding 2em 0
+
+@media (min-width: breakpoint-xl)
+	
+	h1
+		padding 2em 0

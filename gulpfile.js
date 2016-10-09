@@ -18,6 +18,7 @@ var paths = {
 		files: 'assets/css/*.styl',
 		main: 'assets/css/style.styl',
 		other: [
+			'bower_components/bootstrap/dist/css/bootstrap.min.css',
 			'bower_components/flexy/flexy.min.css',
 			'assets/css/*.css'
 		]
@@ -25,7 +26,10 @@ var paths = {
 	js: {
 		files: [
 			'bower_components/jquery/dist/jquery.js',
-			'assets/js/googleAnalytics.js'
+			'bower_components/bootstrap/dist/js/bootstrap.min.js',
+			'assets/js/jquery.easing.min.js',
+			'assets/js/scrolling-nav.js',
+			'assets/js/googleAnalytics.js',
 		]
 	},
 	output: 'assets/dist/'
