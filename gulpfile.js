@@ -46,7 +46,7 @@ gulp.task('css', function() {
 		.pipe(gulpif(path.extname(paths.css.main) == '.scss', sass()))
 		.pipe(autoprefix())
 		.pipe(addsrc(paths.css.other))
-		.pipe(order(['*.css', 'style.css']))
+		.pipe(order(['bower_components/bootstrap/dist/css/bootstrap.min.css', '*.css', 'style.css']))
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest(paths.output))
 		.pipe(minify())
