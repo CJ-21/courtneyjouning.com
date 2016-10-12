@@ -20,31 +20,32 @@
 	.about-content
 		font-size 0.8em
 		
-	
-	.about
+	#about .container
 		display flex
 		flex-direction row
 
 @media (min-width: breakpoint-desktop)
 
+	.about
+		display flex
+		flex-direction row
+
 	.about-content
 		font-size 0.8em
 		padding 0 0 0 5em
 			
-	.about
-		flex 1
-	
 	.about-content p
 		margin 2.5em 0
 			
 	#about .container
-		diplay flex
-		flex-direction row
 		padding 0 2em
 
 	.head-shot img
 		width 250px
 		height 300px
+	
+	.container:before, .container:after
+		content initial
 			
 @media (min-width: breakpoint-xl)
 	

@@ -1,68 +1,66 @@
 @import 'vars'
 
+a.navbar-brand
+	font-size 1.2em
+	
+ul.navbar-nav
+	font-size 1em
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
 	background transparent !important
 
 #mainNav
-	padding 2em 3em
+	padding 1em 3em
+	// border-bottom rgba(0,0,0,.1) solid 1px // i want this when white background for once uncollapsed
 
-// #mainNav .navbar-header .page-scroll
-// 	display flex
-// 	flex-direction row
+#mainNav .navbar-header.page-scroll
+	display flex
+	flex-direction row
+	align-items center
+	justify-content space-between
+
+.navbar-header:before, .navbar-header:after
+	content initial
 	
 .button
 	order 2
 	
 .navbar
-	padding 0
-	transition background .5s ease-in-out,padding .5s ease-in-out
+	transition background .5s ease-in-out,padding .5s ease-in-out, color .5s ease-in-out
 	border 0
-	background fade-black
 	text-align right
 
 .navbar-default .navbar-toggle
 	padding 0
 	margin 0
-	color fade-white
+	color #777
 	border 0
 	
 .navbar-default .navbar-brand
 	padding 0
-	line-height 1.5
-	height inherit
+	line-height 50px
+	vertical-align middle
 
-.top-nav-collapse
-	padding 0
-	background fade-black
-	
-.navbar-brand p
-	margin 0
-	
-#nav 
-	display flex
-	flex-direction row
-	justify-content space-between
-	align-items center	
-	padding 0
-	
-.navbar-toggle.affix .navbar-header .navbar-brand 
-	
-.navbar-toggle.affix .nav > li > a, .navbar-toggle.affix .nav > li > a:focus 
-	color header-font-color
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+	background transparent
+	color primary-color !important
 	
 
 @media (min-width: breakpoint-tablet)
 
-	#nav .navbar-header
+	a.navbar-brand
+		font-size 1.3em
+		
+	ul.navbar-nav
+		font-size 1.1em
+
+	#mainNav
 		display flex
 		flex-direction row
 		justify-content space-between
-		align-items center	
-		padding 0
-
-	#nav .contain
-		padding 0 4em
-		
+	
+	#mainNav:before, #mainNav:after
+		content initial
 	
 // before scroll
 	.navbar-default 
@@ -85,6 +83,8 @@
 
 	.navbar-default.affix 
 		background-color white
+		border-bottom 1px solid rgba(0, 0, 0, 0.1)
+		transition .5s
 		
 	.navbar-default.affix .navbar-header .navbar-brand 
 		color header-font-color
@@ -92,6 +92,7 @@
   
 	.navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus 
 		color primary-color
+		transition .5s
   
 	.navbar-default.affix .nav > li > a, .navbar-default.affix .nav > li > a:focus 
 		color header-font-color
@@ -99,11 +100,32 @@
   
 	.navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover 
 		color primary-color
+		transition .5s
   
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 		background transparent
 		color primary-color !important
+		transition .5s
 		
-// @media (min-width: breakpoint-desktop)
+@media (min-width: breakpoint-desktop)
 
-// @media (min-width: breakpoint-xl)
+	a.navbar-brand
+		font-size 1.5em
+		
+	ul.navbar-nav
+		font-size 1.2em
+
+@media (min-width: breakpoint-xl)
+	
+	a.navbar-brand
+		font-size 1.7em
+	
+	ul.navbar-nav
+		font-size 1.5em
+
+
+
+
+
+
+
