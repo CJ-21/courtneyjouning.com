@@ -3,6 +3,7 @@
 @import 'footer'
 @import 'header'
 @import 'nav'
+@import 'contact'
 @import 'vars'
 
 * 
@@ -13,12 +14,15 @@ body
 	font-family 'Montserrat', sans-serif
 	line-height 1.5
 	-webkit-font-smoothing antialiased
+	
+a
+	cursor pointer
 
 section
-	padding-top 1em
+	padding 1em 1em 4em 1em
 
-#nav, #header
-	padding-top 0em
+#nav, #header, #footer
+	padding 0em
 
 .container
 	margin 0 auto
@@ -31,26 +35,35 @@ h1
 	color header-font-color
 	margin 0
 
-// .break
-// 	background-image url('../img/light.jpg')
-// 	background-repeat no-repeat
-// 	background-attachment fixed
-// 	background-position center center
-// 	background-size cover
-// 	height 200px
+.break
+	background-image url('../img/tools.jpg')
+	background-repeat no-repeat
+	background-attachment fixed
+	background-position center center
+	background-size cover
+	height 200px
 	
 @media (min-width: breakpoint-tablet)
 
 	h1
 		padding 2em 0
 		font-size 2em
+	
+	section
+		padding 1em 1em 8em 1em
 
 @media (min-width: breakpoint-desktop)
 	
 	h1
 		padding 2em 0
+		
+	section
+		padding 1em 1em 12em 1em
 
 @media (min-width: breakpoint-xl)
 	
 	h1
 		padding 2em 0
+	
+	section
+		padding 1em 1em 16em 1em

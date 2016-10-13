@@ -29,6 +29,7 @@ var paths = {
 			'bower_components/bootstrap/dist/js/bootstrap.min.js',
 			'assets/js/jquery.easing.min.js',
 			'assets/js/scrolling-nav.js',
+			'assets/js/contact-me.js',
 			'assets/js/googleAnalytics.js',
 		]
 	},
