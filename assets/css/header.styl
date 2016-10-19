@@ -4,33 +4,49 @@
 	background-image url('../img/light.jpg')
 	background-repeat no-repeat
 	background-attachment fixed
-	background-position center center
+	background-position center center relative 
 	background-size cover
 	text-align center
 	color white
+	position relative
+	z-index -2
 	
 .header-content
-	background-color rgba(0, 0, 0, 0.7)
-	padding 17em 0
-	font-size 1em
+	background-color rgba(255, 255, 255, 0.1)
+	padding 16em 0 23em 0
+
+.header-2
+	font-size 2em
+	position fixed
+	left 0
+	right 0
+	z-index -1
+	
 	
 @media (min-width: breakpoint-tablet)
 	
 	.header-content
-		background-color rgba(0, 0, 0, 0.7)
-		padding 15em 0
-		font-size 1.2em
+		background-color rgba(255, 255, 255, 0.1)
+		padding 21em 0 20em 0
+	
+	.header-2
+		font-size 2em
 
 @media (min-width: breakpoint-desktop)
 
 	.header-content
-		background-color rgba(0, 0, 0, 0.7)
-		padding 17em 0
-		font-size 1.5em
+		background-color rgba(255, 255, 255, 0.1)
+		padding 23em 0 25em 0
+
+	.header-2
+		font-size 2.75em
+		
 
 @media (min-width: breakpoint-xl)
 	
 	.header-content
-		background-color rgba(0, 0, 0, 0.7)
-		padding 22em 0
-		font-size 2em
+		background-color rgba(255, 255, 255, 0.1)
+		padding 25em 0
+	
+	.header-2
+		font-size 5em
