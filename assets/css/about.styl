@@ -7,6 +7,7 @@
 .head-shot img
 	width 250px
 	height 300px
+	object-fit contain
 
 #about .container
 	display flex
@@ -22,6 +23,8 @@
 	#about .container
 		display flex
 		flex-direction row
+		padding 2em
+
 
 @media (min-width: breakpoint-desktop)
 
@@ -31,13 +34,13 @@
 
 	.about-content
 		font-size 1em
-		padding 0 0 0 5em
+		padding 0 0 0.5em 3em
 			
 	.about-content p
 		margin 2.5em 0
 			
 	#about .container
-		padding 0 2em
+		padding 2em 2em
 
 	.head-shot img
 		width 300px

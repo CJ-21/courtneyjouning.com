@@ -2,7 +2,7 @@
 
 #footer 
 	color header-font-color
-	// background rgba(235, 235, 235, 0.7)
+	background rgba(235, 235, 235, 0.5)
 	display flex
 	flex-direction column
 	align-items center
@@ -14,11 +14,11 @@
 	font-size 0.5em
 	text-align center
 
-.fa-linkedin
-	background-color #0085AE
+.fa-linkedin-square
+	color fade-black
 	
-.fa-github
-	background-color #070709
+.fa-git-square
+	color fade-black
 
 .social
 	display flex
@@ -31,7 +31,6 @@
 	height 30px
 	line-height 30px
 	text-align center
-	color rgba(255, 255, 255, 0.8)
 	-webkit-transition all 0.3s ease-in-out
 	-moz-transition all 0.3s ease-in-out
 	-ms-transition all 0.3s ease-in-out
@@ -39,33 +38,4 @@
 	transition all 0.3s ease-in-out
 
 .social-icons .fa:hover
-	color white
-
-.social-icons.icon-circle .fa
-	border-radius 50%
-
-
-
-
-@media (min-width: breakpoint-tablet)
-
-	.social i
-		// margin 1.75em 0
-		// padding .25em .25em
-		color white
-
-
-@media (min-width: breakpoint-desktop)
-
-	.social i
-		// margin 2.75em 0
-		// padding .25em .25em
-		color white
-
-
-@media (min-width: breakpoint-xl)
-
-	.social i
-		// margin 2.75em 0
-		// padding .25em .25em
-		color white
+	color header-font-color
