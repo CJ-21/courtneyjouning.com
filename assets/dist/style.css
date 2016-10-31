@@ -256,7 +256,7 @@
   background-image: url("../img/light.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center relative;
+  background-position: left center;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -265,7 +265,7 @@
 }
 .header-content {
   background-color: rgba(255,255,255,0.1);
-  padding: 16em 0 23em 0;
+  padding: 14em 0 23em 0;
 }
 .header-2 {
   font-size: 2em;
@@ -274,10 +274,24 @@
   right: 0;
   z-index: -1;
 }
-@media (min-width: 48em) {
+@media (min-width: 48em) and (orientation: portrait) {
   .header-content {
     background-color: rgba(255,255,255,0.1);
     padding: 21em 0 20em 0;
+  }
+  #header {
+    background-position: top center;
+  }
+  .header-2 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 48em) and (orientation: landscape) {
+  .header-content {
+    padding: 31em 0 30em 0;
+  }
+  #header {
+    background-position: top center;
   }
   .header-2 {
     font-size: 2em;
@@ -290,6 +304,9 @@
   }
   .header-2 {
     font-size: 2.75em;
+  }
+  #header {
+    background-position: top center;
   }
 }
 @media (min-width: 90em) {
