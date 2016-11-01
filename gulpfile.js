@@ -27,6 +27,7 @@ var paths = {
 		files: [
 			'bower_components/jquery/dist/jquery.js',
 			'bower_components/bootstrap/dist/js/bootstrap.min.js',
+			'assets/js/jqBootstrapValidation.js',
 			'assets/js/jquery.easing.min.js',
 			'assets/js/scrolling-nav.js',
 			'assets/js/contact-me.js',

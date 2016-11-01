@@ -24,7 +24,7 @@
   top 2em
   margin 0
   font-size 0.85em
-  line-height 1.4em
+  line-height 1.2em
   vertical-align middle
   vertical-align baseline
   opacity 0
@@ -52,5 +52,26 @@ form .row:first-child .floating-label-form-group
   background fade-black
   border none
   
-.btn-success.active, .btn-success:active, .btn-success:hover, .open>.dropdown-toggle.btn-success
+.btn-success.active, .btn-success:active, .btn-success:focus, .btn-success:hover, .open>.dropdown-toggle.btn-success
   background-color header-font-color
+  
+.text-danger
+  color red
+  font-size 0.8em
+
+.text-danger ul
+  list-style none
+
+.alert-success
+  color header-font-color
+  background rgb(245, 245, 245)
+  border-color fade-black
+  
+
+@media (min-width: breakpoint-tablet) and (orientation:portrait)
+  .floating-label-form-group label
+    line-height 5em
+    
+@media (min-width: breakpoint-tablet) and (orientation:landscape)
+  .floating-label-form-group label
+    line-height 2em

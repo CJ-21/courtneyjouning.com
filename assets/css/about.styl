@@ -1,50 +1,87 @@
 @import 'vars'
 
 .about-content
-	padding 0.9em
-	font-size 1em
+	// padding 0.9em
+	font-size 0.8em
 	
 .head-shot img
 	width 250px
 	height 300px
 	object-fit contain
+	padding-bottom 1em
 
 #about .container
 	display flex
 	flex-direction column
 	align-items center
 
+.about-content p
+	padding .4em 0
 
-@media (min-width: breakpoint-tablet)
+
+@media (min-width: breakpoint-tablet) and (orientation:portrait)
 
 	.about-content
-		font-size 0.8em
+		font-size 1em
+		
+	#about .container
+		display flex
+		flex-direction column
+		padding 1em 0em
+	
+	#about
+		padding 1em 1em 0 1em
+		
+	.head-shot img
+		width 350px
+		height 425px
+		margin-bottom 2em
+
+@media (min-width: breakpoint-tablet) and (orientation:landscape)
+	.about-content
+		font-size 1.1em
+		margin 0 5em
 		
 	#about .container
 		display flex
 		flex-direction row
-		padding 2em
+		padding 2em 0
+	
+	#about
+		padding 3em 0
+	
+	.head-shot img
+		width 350px
+		height 450px
+	
+	.about
+		display flex
+		flex-direction column
 
 
 @media (min-width: breakpoint-desktop)
 
-	.about
-		display flex
-		flex-direction row
+	// .about
+	// 	display flex
+	// 	flex-direction row
 
 	.about-content
-		font-size 1em
-		padding 0 0 0.5em 3em
+		font-size 1.1em
+		padding 0 0 0em 2em
+		margin 0 1em
 			
-	.about-content p
-		margin 2.5em 0
+	// .about-content p
+	// 	margin 1.5em .5em
 			
 	#about .container
-		padding 2em 2em
+		padding 2em 0
+		display flex
+		// flex-direction row
+		margin 0 auto
 
 	.head-shot img
 		width 300px
-		height 350px
+		height 375px
 	
 	.container:before, .container:after
 		content initial

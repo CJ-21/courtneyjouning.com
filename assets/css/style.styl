@@ -14,12 +14,10 @@ body
 	font-family 'Montserrat', sans-serif
 	line-height 1.5
 	-webkit-font-smoothing antialiased
+	text-align justify
 	
 a
 	cursor pointer
-
-section
-	padding 1em 1em 0 1em
 
 #nav, #header, #footer
 	padding 0em
@@ -34,16 +32,9 @@ h1
 	font-size 1.5em
 	color header-font-color
 	margin 0
-
-.break
-	background-image url('../img/tools.jpg')
-	background-repeat no-repeat
-	background-attachment fixed
-	background-position center center
-	background-size cover
-	height 200px
 	
-@media (min-width: breakpoint-tablet)
+	
+@media (min-width: breakpoint-tablet) and (orientation:portrait)
 
 	h1
 		padding 1em 0 1.2em 0
@@ -51,6 +42,11 @@ h1
 	
 	section
 		padding 1em 1em 0 1em
+		
+@media (min-width: breakpoint-tablet) and (orientation:landscape)
+	h1
+		line-height 1.5em
+
 
 @media (min-width: breakpoint-desktop)
 	
